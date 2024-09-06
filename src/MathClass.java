@@ -20,5 +20,7 @@ public class MathClass {
 
         System.out.println("The hypotenuse is: "+z);
 
+        scanner.close();
+
     }
 }
