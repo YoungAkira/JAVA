@@ -6,9 +6,9 @@ public class SwapVariables{
         String y = "Juice";
         String temp;
 
-        temp = x;
-        x = y;
-        y = temp;
+        String temp = x;
+        String x = y;
+        String y = temp;
 
         System.out.println("X: "+x);
         System.out.println("Y: "+y);
