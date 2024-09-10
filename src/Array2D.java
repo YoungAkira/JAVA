@@ -2,7 +2,10 @@ public class Array2D {
 
     public static void main(String[] args) {
 
-        String[][] cars = new String[3][3];
+        String[][] cars = { {"Camaro", "Corvete", "Silverado"},
+                            {"Mustang","Ranger","F-150"},
+                            {"Ferrari", "Lambo","Tesla"}
+                          };
 
         cars[0][0] = "Camaro";
         cars[0][1] = "Corvete";
@@ -19,7 +22,6 @@ public class Array2D {
             for(int j = 0; j < cars[i].length; j++) {
                 System.out.print(cars[i][j]+ " ");
             }
-        }
-        
+        }        
     }
 }
