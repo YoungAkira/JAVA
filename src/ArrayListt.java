@@ -4,18 +4,33 @@ public class ArrayListt {
 
     public static void main(String[] args) {
 
-        ArrayList<String> food = new ArrayList<String>();
+        ArrayList<ArrayList<String>> groceryList = new ArrayList<>();        
+        
+        ArrayList<String> bakeryList = new ArrayList<>();
 
-        food.add("Pizza");
-        food.add("Hamburguer");
-        food.add("hotdog");
+        bakeryList.add("bread");
+        bakeryList.add("milk");
+        bakeryList.add("donuts");
 
-        food.set(0, "sushi");
-        food.remove(2);
-        //food.clear();
+        ArrayList<String> produceList = new ArrayList<>();
 
-        for(int i = 0; i<food.size(); i++) {
-            System.out.println(food.get(i));
-        }
-    }
+        produceList.add("tomato");
+        produceList.add("pasta");
+        produceList.add("rice");
+
+        ArrayList<String> drinksList = new ArrayList<>();
+
+        drinksList.add("coffee");
+        drinksList.add("tea");
+        drinksList.add("monster");
+
+
+        //add object inside other object
+        groceryList.add(bakeryList);
+        groceryList.add(produceList);
+        groceryList.add(drinksList);
+
+        System.out.println(groceryList.get(2).get(2));
+
+    }   
 }
