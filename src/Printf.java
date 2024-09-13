@@ -13,8 +13,5 @@ public class Printf {
         //System.out.printf("this is %,d", myInt);
 
         System.out.printf("this is %10c", myChar);
-
-
     }
-    
 }
