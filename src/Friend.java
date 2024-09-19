@@ -11,5 +11,4 @@ public class Friend {
     static void DisplayFriends() {
         System.out.println("You have "+numberOfFriends+" friends");
     }
-    
 }
