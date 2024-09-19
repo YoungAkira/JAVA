@@ -10,6 +10,10 @@ public class CarEncapsulation {
         this.setYear(year);
     }
 
+    CarEncapsulation(CarEncapsulation x){
+        this.copy(x);
+    }
+
     //Creating Getters
     public String getMake() {
         return make;
@@ -34,5 +38,11 @@ public class CarEncapsulation {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public void copy(CarEncapsulation x) {
+        this.setMake(x.getMake());
+        this.setModel(x.getModel());
+        this.setYear(x.getYear());
     }
 }
