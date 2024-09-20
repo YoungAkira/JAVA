@@ -8,7 +8,7 @@ public class Encapsulation {
         //copying info the car || car2.copy(car1);
         CarEncapsulation car2 = new CarEncapsulation(car1);
 
-                          
+        //Output objects
         System.out.println(car1.getMake());
         System.out.println(car1.getModel());
         System.out.println(car1.getYear());

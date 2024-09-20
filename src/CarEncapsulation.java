@@ -27,6 +27,7 @@ public class CarEncapsulation {
         return year;
     }
 
+    
     //Creating Setters
     public void setMake(String make) {
         this.make = make;
